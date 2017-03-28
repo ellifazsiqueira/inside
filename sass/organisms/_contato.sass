@@ -1,0 +1,107 @@
+section.contatos
+  .container
+    .contato
+      margin: 120px 0 30px 0
+      .contatos
+        +breakpoint($notebook)
+          text-align: center
+          +flexbox
+          +justify-content(space-around)
+          +make-sm-column(8)
+          +make-sm-column-offset(2)
+          [class^="contato-"]
+            color: rgba($cinza, 0.5)
+            +font-size(30px)
+            +transition(.5s)
+            i
+              color: rgba($cinza, 0.5)
+              +font-size(100px)
+              margin: 5px auto
+              +transition(.5s)
+            &:hover
+              color: $cinza
+              i
+                color: $verde
+        +breakpoint($celular)
+          display: block
+          text-align: center
+          [class^="contato-"]
+            color: $cinza
+            +font-size(30px)
+            +transition(.5s)
+            i
+              color: $verde
+              +font-size(60px)
+              margin: 5px auto
+              +transition(.5s)
+    .formulario
+      +breakpoint($notebook)
+        +make-sm-column(12)
+      .titulo
+        display: block
+        margin: 30px auto 50px auto
+        h2
+          color: $cinza
+          text-align: center
+          text-transform: uppercase
+          +font-size(30px)
+          font-weight: $bold
+          .grande
+            +font-size(40px)
+          .verde
+            color: $verde
+      .formularios
+        form
+          .cols
+            +make-row
+            .col
+              margin: 0 auto
+              width: 90%
+              +breakpoint($notebook)
+                +make-sm-column(6)
+            .textarea,
+            .assunto
+              margin: 0 auto
+              width: 90%
+              +breakpoint($notebook)
+                +make-sm-column(12)
+            .envio
+              text-align: center
+            input,
+            select,
+            textarea
+              width: 100%
+              border: 2px solid $cinza
+              padding-left: 14px
+              border-radius: 15px
+              background-color: $cinza
+              &:link
+                border: 2px solid $verde
+                border-radius: 15px
+              &:visited
+                border: 2px solid $verde
+                border-radius: 15px
+              &:active
+                border: 2px solid $verde
+                border-radius: 15px
+              &:hover
+                border: 2px solid $verde
+                border-radius: 15px
+              &:focus
+                border: 2px solid $verde
+                border-radius: 15px
+            textarea
+              margin-bottom: 20px
+            .botao-verde
+              padding: 11px 22px
+              +font-size(30px)
+              display: table
+              border: 2px solid rgba($cinza, 0.7)
+              border-radius: 60px
+              color: $verde
+              font-weight: $bold
+              margin-bottom: 30px
+              &:hover
+                color: $verde
+                border: 2px solid $verde
+                +transition(.3s)

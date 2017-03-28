@@ -1,0 +1,21 @@
+.corpo
+  a.plus
+      border: 2px solid $cinza
+      border-radius: 100%
+      padding: 12px 16px
+      color: $amarelo
+      +breakpoint($notebook)
+        display: none
+      &:hover
+        border-color: $amarelo
+        color: $amarelo
+  a.texto
+      border: 2px solid rgba($cinza, 0.7)
+      padding: 11px 22px
+      border-radius: 60px
+      color: $amarelo
+      +breakpoint($celular)
+        display: none
+      &:hover
+        border-color: $amarelo
+        color: $amarelo

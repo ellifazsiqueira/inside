@@ -1,0 +1,231 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Studio Inside - Web Design</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/contato.css">
+    <link rel="stylesheet" href="css/geral.css">
+    <link rel="stylesheet" href="bower_components/wow/css/libs/animate.css">
+    <link rel="stylesheet" href="css/plugins.css">
+    <link rel="shortcut icon" href="../favicon.ico">
+    <script src="js/modernizr.custom.js"></script>
+    <!--  Teste do menu  -->
+    <script src="js/segment.min.js"></script>
+    <script src="js/ease.min.js"></script>
+</head>
+<body>
+	<div class="layout">
+		<header>
+        <div class="container-fluid verde-topo">
+            <div class="logo">
+                <div class="clogo-sup">
+                    <img src="images/logo-verde.svg" alt="">
+                </div>
+            </div>
+            <div class="menu">
+                <div class="content">
+                    <div class="device">
+                        <div class="device__screen">
+                            <div id="menu-icon-wrapper" class="menu-icon-wrapper verde" style="visibility: hidden">
+                                <svg width="1000px" height="1000px">
+                                    <path id="pathA" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
+                                    <path id="pathB" d="M 300 500 L 700 500"></path>
+                                    <path id="pathC" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"></path>
+                                </svg>
+                                <button id="menu-icon-trigger" class="menu-icon-trigger"></button>
+                            </div><!-- menu-icon-wrapper -->
+                            <div id="dummy" class="dummy">
+															<div class="animacao">
+                                <a href="index.html"><div class="dummy__item primeiro">Index</div></a>
+                                <a href="portfolio.html"><div class="dummy__item segundo">Portfólio</div></a>
+                                <a href="metodologia.html"><div class="dummy__item terceiro">Metodologia</div></a>
+                                <a href="blog.html"><div class="dummy__item quarto">Blog</div></a>
+                                <a href="inside.html"><div class="dummy__item quinto">Inside</div></a>
+                                <a href="contato.html"><div class="dummy__item sexto active">Contato</div></a>
+                                <div class="dummy__item setimo">
+                                    <div class="sociais">
+                                        <div class="social">
+                                            <div class="icone-behance">
+                                                <img src="images/icone-behance.svg" alt="">
+                                            </div>
+                                            <div class="icone-twitter">
+                                                <img src="images/icone-twitter.svg" alt="">
+                                            </div>
+                                            <div class="icone-facebook">
+                                                <img src="images/icone-facebook.svg" alt="">
+                                            </div>
+                                            <div class="icone-instagram">
+                                                <img src="images/icone-instagram.svg" alt="">
+                                            </div>
+                                            <div class="icone-dribbble">
+                                                <img src="images/icone-dribbble.svg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+															</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+						<div class="links-verde">
+							<nav>
+								<ul>
+									<li><a href="index.html">Início</a></li>
+									<li><a href="portfolio.html">Portfólio</a></li>
+									<li><a href="metodologia.html">Metodologia</a></li>
+									<li><a href="blog.html">Blog</a></li>
+									<li><a href="inside.html">Inside</a></li>
+									<li><a href="contato.html" class="ativo">Contato</a></li>
+								</ul>
+							</nav>
+						</div>
+        </div>
+        <script src="js/main.js"></script>
+    </header>
+		<main>
+			<section class="contatos">
+				<div class="container">
+          <div class="contato">
+              <div class="contatos">
+                  <div class="contato-telefone wow fadeInDown">
+                      <i class="fa fa-mobile"></i>
+                      <p>62 9 9693-6229</p>
+                  </div>
+                  <div class="contato-email wow fadeInDown">
+                      <i class="fa fa-envelope-o"></i>
+                      <p>contato@studioinside.com.br</p>
+                  </div>
+                  <div class="contato-whatsapp wow fadeInDown">
+                      <i class="fa fa-whatsapp"></i>
+                      <p>62 9 9116-5087</p>
+                  </div>
+              </div>
+          </div>
+          <div class="formulario">
+              <div class="titulo">
+                  <h2><span class="verde"><span class="grande">F</span>ale</span> conosco</h2>
+              </div>
+              <div class="formularios">
+                  <form>
+                      <div class="cols">
+                          <div class="col">
+                              <div class="form-group wow fadeInUp" data-wow-delay=".1s">
+                                  <input type="text" placeholder="Nome" required>
+                              </div>
+                          </div>
+                          <div class="col">
+                              <div class="form-group wow fadeInUp" data-wow-delay=".1s">
+                                  <input type="text" placeholder="Email" required>
+                              </div>
+                          </div>
+                          <div class="col">
+                              <div class="form-group wow fadeInUp" data-wow-delay=".3s">
+                                  <input type="number" placeholder="Telefone" required>
+                              </div>
+                          </div>
+                          <div class="col">
+                              <div class="form-group wow fadeInUp" data-wow-delay=".3s">
+                                  <input type="number" placeholder="WhatsApp">
+                              </div>
+                          </div>
+                          <div class="col">
+                              <div class="form-group wow fadeInUp" data-wow-delay=".5s">
+                                  <input type="text" placeholder="Cidade" required>
+                              </div>
+                          </div>
+                          <div class="col">
+                              <div class="form-group wow fadeInUp" data-wow-delay=".5s">
+                                  <select>
+                                      <option>Estado</option>
+                                      <option value="ac">Acre</option>
+                                      <option value="al">Alagoas</option>
+                                      <option value="ap">Amapá</option>
+                                      <option value="am">Amazonas</option>
+                                      <option value="ba">Bahia</option>
+                                      <option value="ce">Ceará</option>
+                                      <option value="df">Distrito Federal</option>
+                                      <option value="es">Espirito Santo</option>
+                                      <option value="go">Goiás</option>
+                                      <option value="ma">Maranhão</option>
+                                      <option value="mt">Mato Grosso</option>
+                                      <option value="ms">Mato Grosso do Sul</option>
+                                      <option value="mg">Minas Gerais</option>
+                                      <option value="pa">Pará</option>
+                                      <option value="pb">Paraíba</option>
+                                      <option value="pr">Paraná</option>
+                                      <option value="pe">Pernambuco</option>
+                                      <option value="pi">Piauí</option>
+                                      <option value="rj">Rio de Janeiro</option>
+                                      <option value="rr">Roraima</option>
+                                      <option value="rn">Rio Grande do Norte</option>
+                                      <option value="ro">Rondonia</option>
+                                      <option value="rs">Rio Grande do Sul</option>
+                                      <option value="sc">Santa Catarina</option>
+                                      <option value="sp">São Paulo</option>
+                                      <option value="se">Sergipe</option>
+                                      <option value="to">Tocantins</option>
+                                  </select>
+                              </div>
+                          </div>
+                          <div class="col assunto">
+                              <div class="form-group wow fadeInUp" data-wow-delay=".7s">
+                                  <input type="text" placeholder="Assunto" required>
+                              </div>
+                          </div>
+                          <div class="col textarea wow fadeInUp" data-wow-delay=".9s">
+                              <div class="form-group">
+                                  <textarea placeholder="Preencha suas duvidas" cols="30" rows="5"></textarea>
+                                  <br>
+                                  <br>
+																	<center>
+	                                  <a href="#" class="botao-verde medio wow fadeInUp" data-wow-delay="1.1s">Enviar contato</a>
+																	</center>
+                              </div>
+                          </div>
+                      </div>
+                  </form>
+              </div>
+          </div>
+				</div>
+      </section>
+		</main>
+		<footer>
+			<div class="rodape">
+				<div class="container">
+					<a href="index.html">
+						<p>Inside Studio - 2017 Todos os Direitos Reservados</p>
+					</a>
+				</div>
+			</div>
+		</footer>
+	</div>
+<script src="js/main.js"></script>
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/wow/dist/wow.min.js"></script>
+<script>
+        var hash = window.location.hash,
+            current = 0,
+            demos = Array.prototype.slice.call( document.querySelectorAll( '#codrops-demos > a' ) );
+
+        if( hash === '' ) hash = '#set-1';
+        setDemo( demos[ parseInt( hash.match(/#set-(\d+)/)[1] ) - 1 ] );
+
+        demos.forEach( function( el, i ) {
+            el.addEventListener( 'click', function() { setDemo( this ); } );
+        } );
+
+        function setDemo( el ) {
+            var idx = demos.indexOf( el );
+            if( current !== idx ) {
+                var currentDemo = demos[ current ];
+                currentDemo.className = currentDemo.className.replace(new RegExp("(^|\\s+)" + 'current-demo' + "(\\s+|$)"), ' ');
+            }
+            current = idx;
+            el.className = 'current-demo';
+        };
+    </script>
+</body>
+</html>

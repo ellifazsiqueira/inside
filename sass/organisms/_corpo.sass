@@ -1,0 +1,73 @@
+section.inicio
+  .container
+    .corpo
+      margin: 160px auto 70px
+      +breakpoint($notebook)
+        margin-top: 180px
+      .clogo-centro
+        img
+          width: 267px
+          height: 60px
+          +breakpoint($notebook)
+            width: 534px
+            height: 120px
+      .cslogan
+        margin-top: 70px
+        h1
+          margin-bottom: 70px
+          color: $cinza
+          +font-size(25px)
+          +breakpoint($notebook)
+            margin-bottom: 80px
+            +font-size(50px)
+      .sociais
+        +flexbox
+        +align-items(center)
+        +justify-content(space-around)
+        +make-sm-column(4)
+        +make-sm-column-offset(4)
+        margin: 30px 0 0
+        text-align: center
+        +breakpoint($ultrawide)
+          +flexbox
+          +align-items(center)
+          +justify-content(space-around)
+          +make-sm-column(6)
+          +make-sm-column-offset(3)
+          margin: 90px 0 20px 0
+        +breakpoint($celular)
+          display: none
+
+        .icone-facebook
+          a
+            img
+              width: 50px
+              height: 50px
+        .icone-twitter,
+        .icone-instagram
+          a
+            img
+              width: 45px
+              height: 45px
+              +breakpoint($ultrawide)
+                width: 65px
+                height: 65px
+              +opacity(0.7)
+              +transition(.5s)
+              &:hover
+                +opacity(1)
+        .icone-dribbble,
+        .icone-behance
+          a
+            img
+              width: 35px
+              height: 35px
+              +breakpoint($ultrawide)
+                width: 60px
+                height: 60px
+              +opacity(0.7)
+              +transition(.5s)
+              &:hover
+                +opacity(1)
+        &.ativo
+          display: none

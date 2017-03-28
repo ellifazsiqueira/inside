@@ -1,0 +1,168 @@
+header
+    .container-fluid
+        +clearfix
+        min-height: 90px
+        position: fixed
+        width: 100%
+        margin: 0 auto 90px auto
+        background: rgba($preto, 0.9)
+        .logo
+            .logo-sup
+                display: none
+            .clogo-sup
+                float: left
+                margin: 20px 12px
+                img
+                    height: 50px
+                    width: 92px
+                    display: inline-flex
+        .links-amarelo
+          float: right
+          margin: 35px 30px 0 0
+          nav
+            display: none
+            +breakpoint($notebook)
+              display: inline-block
+            ul
+              .ativo
+                color: $amarelo
+              li
+                display: inline-block
+                margin: 0 0 0 20px
+                a
+                  +font-size(22px)
+                  font-weight: $bold !important
+                  color: $cinza
+                  text-transform: uppercase
+                  +transition(.3s)
+                  +breakpoint($ultrawide)
+                    +font-size(28px)
+                  &:hover
+                    color: $amarelo
+        .links-laranja
+          float: right
+          margin: 35px 30px 0 0
+          nav
+            display: none
+            +breakpoint($notebook)
+              display: inline-block
+            ul
+              .ativo
+                color: $laranja
+              li
+                display: inline-block
+                margin: 0 0 0 20px
+                a
+                  +font-size(22px)
+                  font-weight: $bold !important
+                  color: $cinza
+                  text-transform: uppercase
+                  +transition(.3s)
+                  +breakpoint($ultrawide)
+                    +font-size(28px)
+                  &:hover
+                    color: $laranja
+        .links-rosa
+          float: right
+          margin: 35px 30px 0 0
+          nav
+            display: none
+            +breakpoint($notebook)
+              display: inline-block
+            ul
+              .ativo
+                color: $rosa
+              li
+                display: inline-block
+                margin: 0 0 0 20px
+                a
+                  +font-size(22px)
+                  font-weight: $bold !important
+                  color: $cinza
+                  text-transform: uppercase
+                  +transition(.3s)
+                  +breakpoint($ultrawide)
+                    +font-size(28px)
+                  &:hover
+                    color: $rosa
+        .links-roxo
+          float: right
+          margin: 35px 30px 0 0
+          nav
+            display: none
+            +breakpoint($notebook)
+              display: inline-block
+            ul
+              .ativo
+                color: $roxo
+              li
+                display: inline-block
+                margin: 0 0 0 20px
+                a
+                  +font-size(22px)
+                  font-weight: $bold !important
+                  color: $cinza
+                  text-transform: uppercase
+                  +transition(.3s)
+                  +breakpoint($ultrawide)
+                    +font-size(28px)
+                  &:hover
+                    color: $roxo
+        .links-ciano
+          float: right
+          margin: 35px 30px 0 0
+          nav
+            display: none
+            +breakpoint($notebook)
+              display: inline-block
+            ul
+              .ativo
+                color: $ciano
+              li
+                display: inline-block
+                margin: 0 0 0 20px
+                a
+                  +font-size(22px)
+                  font-weight: $bold !important
+                  color: $cinza
+                  text-transform: uppercase
+                  +transition(.3s)
+                  +breakpoint($ultrawide)
+                    +font-size(28px)
+                  &:hover
+                    color: $ciano
+        .links-verde
+          float: right
+          margin: 35px 30px 0 0
+          nav
+            display: none
+            +breakpoint($notebook)
+              display: inline-block
+            ul
+              .ativo
+                color: $verde
+              li
+                display: inline-block
+                margin: 0 0 0 20px
+                a
+                  +font-size(22px)
+                  font-weight: $bold !important
+                  color: $cinza
+                  text-transform: uppercase
+                  +transition(.3s)
+                  +breakpoint($ultrawide)
+                    +font-size(28px)
+                  &:hover
+                    color: $verde
+    .amarelo-topo
+        border-bottom: 3px solid $amarelo
+    .laranja-topo
+        border-bottom: 3px solid $laranja
+    .rosa-topo
+        border-bottom: 3px solid $rosa
+    .roxo-topo
+        border-bottom: 3px solid $roxo
+    .ciano-topo
+        border-bottom: 3px solid $ciano
+    .verde-topo
+        border-bottom: 3px solid $verde

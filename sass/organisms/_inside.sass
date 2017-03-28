@@ -1,0 +1,75 @@
+section.inside
+  .container
+    .topo
+      text-align: center
+      margin: 120px auto 20px auto
+      h1
+        +font-size(30px)
+        color: $cinza
+        font-weight: $bold
+        text-transform: uppercase
+        .ciano
+          color: $ciano !important
+          .inicial
+            +font-size(40px)
+    .estrutura
+      display: inline-block
+      width: 100%
+      margin: 0 auto
+      +breakpoint($notebook)
+        margin: 35px auto
+      a
+        text-align: center
+        text-decoration: none
+        color: $cinza
+        &:hover
+          color: $ciano !important
+          .empresa
+            .texto
+              p
+                color: $ciano
+        &:focus
+          color: $ciano
+        .empresa
+          margin-bottom: 25px
+          display: inline-block
+          text-align: center
+          width: 100%
+          padding: 0 25px
+          +breakpoint($notebook)
+            +make-sm-column(6)
+            +make-sm-column-offset(3)
+            margin-bottom: 35px
+            .imagem
+              float: left
+              display: block
+              img
+                width: 125px !important
+            .texto
+              float: right
+              display: block
+              margin-top: 45px !important
+              width: 45%
+              border-left: 2px solid $ciano
+              p
+                color: $cinza
+                font-size: 22px !important
+                margin: 5px auto 5px 25px
+                text-align: right
+          .imagem
+            float: left
+            display: block
+            img
+              margin: 0 auto
+              width: 100px
+          .texto
+            float: right
+            display: block
+            margin-top: 35px
+            width: 45%
+            border-left: 2px solid $ciano
+            p
+              color: $cinza
+              +font-size(25px)
+              margin: 5px auto 5px 25px
+              text-align: right

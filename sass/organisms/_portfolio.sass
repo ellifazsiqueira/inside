@@ -1,0 +1,46 @@
+section.portfolio
+  .container
+    .topo
+      text-align: center
+      margin: 120px auto 20px auto
+      h1
+        +font-size(30px)
+        color: $cinza
+        font-weight: $bold
+        text-transform: uppercase
+        .laranja
+          color: $laranja !important
+          .inicial
+            +font-size(40px)
+    .trabalhos
+      +clearfix
+      .job
+        margin-bottom: 25px
+        a
+          text-align: center
+          text-decoration: none
+          color: $cinza
+          .imagem
+            img
+              margin: 0 auto
+              width: 300px
+              border-top: 3px solid $laranja
+          .titulo
+            margin: 0 auto
+            h1
+              color: $laranja
+              font-weight: $bold
+              +font-size(25px)
+              margin: 10px auto
+          .texto
+            p
+              color: $cinza
+              +font-size(18px)
+              margin: 5px auto
+        +breakpoint($notebook)
+          display: inline-flex
+          a
+            .imagem
+              img
+                width: 450px
+                margin: 0 50px
