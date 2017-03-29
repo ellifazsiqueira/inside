@@ -13,7 +13,6 @@ section.portfolio
           .inicial
             +font-size(40px)
     .trabalhos
-      +clearfix
       .job
         margin-bottom: 25px
         a
@@ -44,3 +43,39 @@ section.portfolio
               img
                 width: 450px
                 margin: 0 50px
+    .topo-port
+      margin: 120px 20px auto
+      text-align: center
+      line-height: 18px
+      .port-titulo
+        color: $laranja
+        +font-size(22px)
+        margin: 0 auto
+        font-weight: $bold
+      .port-subtitulo
+        color: $cinza
+        +font-size(22px)
+        margin: 0 auto
+        font-weight: lighter
+        font-style: italic
+    .jobs
+      color: $cinza
+      margin: 25px auto
+      .port-texto
+        +font-size(20px)
+      .port-sub
+        h2
+          +font-size(20px)
+          font-weight: $bold
+          color: $laranja
+      .port-imagem
+        img
+          margin: 0 auto
+          width: 250px
+          border-top: 2px solid $laranja
+      .port-imagem-2
+        border-top: 2px solid $laranja
+        img
+          margin: 0 auto
+          padding: 0
+          width: 150px
