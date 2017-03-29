@@ -11,6 +11,9 @@ section.inicio
           +breakpoint($notebook)
             width: 534px
             height: 120px
+          +breakpoint($ultrawide)
+            width: 801px
+            height: 180px
       .cslogan
         margin-top: 70px
         h1
@@ -20,6 +23,8 @@ section.inicio
           +breakpoint($notebook)
             margin-bottom: 80px
             +font-size(50px)
+          +breakpoint($ultrawide)
+            +font-size(75px)
       .sociais
         +flexbox
         +align-items(center)

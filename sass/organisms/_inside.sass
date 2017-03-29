@@ -3,6 +3,8 @@ section.inside
     .topo
       text-align: center
       margin: 120px auto 20px auto
+      +breakpoint($ultrawide)
+        margin-top: 150px
       h1
         +font-size(30px)
         color: $cinza
@@ -40,6 +42,10 @@ section.inside
             +make-sm-column(6)
             +make-sm-column-offset(3)
             margin-bottom: 35px
+          +breakpoint($ultrawide)
+            +make-sm-column(6)
+            +make-sm-column-offset(3)
+            margin-bottom: 90px
             .imagem
               float: left
               display: block

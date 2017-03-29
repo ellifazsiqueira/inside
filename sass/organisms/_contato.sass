@@ -2,6 +2,8 @@ section.contatos
   .container
     .contato
       margin: 120px 0 30px 0
+      +breakpoint($ultrawide)
+        margin-top: 150px
       .contatos
         +breakpoint($notebook)
           text-align: center
@@ -40,6 +42,8 @@ section.contatos
       .titulo
         display: block
         margin: 30px auto 50px auto
+        +breakpoint($ultrawide)
+          margin: 50px auto 70px auto
         h2
           color: $cinza
           text-align: center
@@ -101,6 +105,8 @@ section.contatos
               color: $verde
               font-weight: $bold
               margin-bottom: 30px
+              +breakpoint($ultrawide)
+                margin-bottom: 160px
               &:hover
                 color: $verde
                 border: 2px solid $verde
